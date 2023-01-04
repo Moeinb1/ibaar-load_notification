@@ -1,19 +1,22 @@
 import "./App.css";
-import { Row, Col, Button, Checkbox, Form, Input } from "antd";
-import { InfoCircleOutlined } from "@ant-design/icons";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
+import OtpFirstStep from "./pages/otplogin/OtpFirstStep";
+import OtpSecondStep from "./pages/otplogin/OtpSecondStep";
+import Home from './pages/dashboard/Home';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Layout />} />
-        <Route path="/home" element={<Home />} />
-      </Routes>
-    </Router>
+    <div className="font-face-gm">
+      <Router >
+        <Routes>
+          <Route exact path="/" element={<OtpFirstStep />} />
+          <Route path="/verification" element={<OtpSecondStep />} />
+          <Route path="/dashboard" element={<Home />} />
+
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

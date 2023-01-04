@@ -1,11 +1,17 @@
-import { Outlet, Link } from "react-router-dom";
 import { Row, Col, Button, Checkbox, Form, Input } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
+import { useForm } from "antd/es/form/Form";
+import './OtpFirstStep.css'
 
-const Layout = () => {
+
+const OtpFirstStep = () => {
+
+
+  const [form] = useForm();
+
   const navigate = useNavigate();
-  const handleClick = () => navigate("/home");
+  const handleClick = () => navigate("/verification");
 
   const onFinish = (values) => {
     console.log("Success:", values);
@@ -17,7 +23,7 @@ const Layout = () => {
   return (
     <Col
       style={{ width: window.outerWidth, height: window.outerHeight }}
-      className="font-face-gm"
+
     >
       <Col span={24} className="square-table">
         <Row className="top-row">
@@ -33,6 +39,7 @@ const Layout = () => {
 
         <Col span={24}>
           <Form
+            form={form}
             className="ant-form"
             name="basic"
             labelCol={{
@@ -70,7 +77,10 @@ const Layout = () => {
               }}
             >
               <Button
-                onClick={handleClick}
+                onClick={() => {
+                  handleClick()
+                  console.log(form.getFieldValue('shomareMobile'), "shsjshjshjs")
+                }}
                 type="primary"
                 htmlType="submit"
                 className="submit-button"
@@ -85,4 +95,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default OtpFirstStep;
