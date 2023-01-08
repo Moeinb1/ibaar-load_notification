@@ -1,0 +1,15 @@
+.my-input-wrapper {
+  @apply relative w-full  my-6;
+  direction: rtl !important;
+}
+.my-form-input {
+  @apply h-10 pr-4 w-full text-base text-gray-900 bg-white rounded-md border border-gray-400 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-500;
+}
+.my-title-animated {
+  
+  @apply absolute text-base bg-white bg-opacity-80 px-4 rounded-full text-black font-normal text-lg duration-300 transform -translate-y-4 
+   opacity-100 top-0 right-4 origin-[0] peer-focus:right-0  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:translate-y-10;
+}
+.wrapper-class {
+  @apply flex flex-col w-full h-full;
+}

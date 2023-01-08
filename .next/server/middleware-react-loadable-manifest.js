@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"..\\app\\components\\layout\\wrappers\\AppWrapper.js -> ./PageWrapper":{"id":"..\\app\\components\\layout\\wrappers\\AppWrapper.js -> ./PageWrapper","files":["static/chunks/app_components_layout_wrappers_PageWrapper_js.js"]}}

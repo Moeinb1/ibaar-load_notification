@@ -1,25 +1,86 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ibaar",
+  "name": "ای بار ",
+  "description": "هم آنچه از یک برنامه بخواهید",
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#3f51b5",
+  "id": "/",
+  "theme_color": "#3f51b5",
+  "display": "standalone",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/icon/android-36x36.png",
+      "type": "image/png",
+      "sizes": "36x36"
     },
     {
-      "src": "logo192.png",
+      "src": "/icon/android-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/icon/android-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/icon/android-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "/icon/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "/icon/android-chrome-maskable-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/icon/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/icon/tile150x150.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "/icon/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/icon/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "/icon/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "/icon/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/icon/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/icon/maskable.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "prefer_related_applications": false
 }

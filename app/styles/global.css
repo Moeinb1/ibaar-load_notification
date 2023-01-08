@@ -1,0 +1,21 @@
+.hidden-scrollBar::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+  display: none;
+}
+.hidden-scrollBar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  -ms-progress-appearance: none !important;
+  appearance: none !important;
+  margin: 0 !important;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
